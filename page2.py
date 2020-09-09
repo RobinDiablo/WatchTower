@@ -1,0 +1,131 @@
+import tkinter as tk
+from tkinter import ttk
+
+root=tk.Tk()
+root.geometry("1200x700")
+root.title('watchtower')
+root.resizable( height="false",width="false")
+labelTitle = tk.Label(root,text="WatchTower",bg='powder blue',fg='dark blue')
+labelTitle.pack(fill="x")
+
+
+canvas=tk.Canvas(root,width=1200,height=700)
+canvas.pack(side='left')
+blackline=canvas.create_line(180,10,180,700)
+box=canvas.create_rectangle(200,10,1190,500,fill="light gray")
+box=canvas.create_rectangle(200,510,1190,660,fill="powder blue")
+
+
+
+
+topframe=tk.Frame(root,height=150,bg='powder blue',bd=5)
+topframe.pack(side="top",fill="x")
+leftframe=tk.Frame(root,height=550,width=400,bg='light green',bd=5)
+topframe.pack(side="left")
+rightframe=tk.Frame(root,height=550,width=800,bg='white',bd=5)
+topframe.pack(side="right")
+
+but1 = tk.Button(root, padx=8, pady=2, bd=2, bg='dark gray', text="Previous",font=("Courier New", 15))
+but1.place(x=960, y=630)
+but1 = tk.Button(root, padx=10, pady=2, bd=2, bg='dark gray', text="Ouit",font=("Courier New", 15))
+but1.place(x=1100, y=630)
+
+
+
+
+#********************************************************** months ****************************************************************
+
+
+but1 = tk.Button(root, padx=30, pady=7, bd=2, bg='dark gray', text="JANUARY",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=24)
+but1 = tk.Button(root, padx=24, pady=7, bd=2, bg='dark gray', text="FEBRUARY",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=80)
+but1 = tk.Button(root, padx=42, pady=7, bd=2, bg='dark gray', text="MARCH",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=136)
+but1 = tk.Button(root, padx=43, pady=7, bd=2, bg='dark gray', text="APRIL",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=192)
+but1 = tk.Button(root, padx=55, pady=7, bd=2, bg='dark gray', text="MAY",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=248)
+but1 = tk.Button(root, padx=49, pady=7, bd=2, bg='dark gray', text="JUNE",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=304)
+but1 = tk.Button(root, padx=49, pady=7, bd=2, bg='dark gray', text="JULY",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=360)
+but1 = tk.Button(root, padx=38, pady=7, bd=2, bg='dark gray', text="AUGUST",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=416)
+but1 = tk.Button(root, padx=19, pady=7, bd=2, bg='dark gray', text="SEPTEMBER",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=472)
+but1 = tk.Button(root, padx=31, pady=7, bd=2, bg='dark gray', text="OCTOBER",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=528)
+but1 = tk.Button(root, padx=25, pady=7, bd=2, bg='dark gray', text="NOVEMBER",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=584)
+but1 = tk.Button(root, padx=25, pady=7, bd=2, bg='dark gray', text="DECEMBER",font=("Courier New", 15, 'bold'))
+but1.place(x=5, y=642)
+
+
+
+#********************************************************************** dates *************************************************************
+
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="1",font=("Courier New", 15, 'bold'))
+but1.place(x=940, y=48)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="2",font=("Courier New", 15, 'bold'))
+but1.place(x=1020, y=48)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="3",font=("Courier New", 15, 'bold'))
+but1.place(x=1100, y=48)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="5",font=("Courier New", 15, 'bold'))
+but1.place(x=300, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="6",font=("Courier New", 15, 'bold'))
+but1.place(x=380, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="7",font=("Courier New", 15, 'bold'))
+but1.place(x=460, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="8",font=("Courier New", 15, 'bold'))
+but1.place(x=540, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="9",font=("Courier New", 15, 'bold'))
+but1.place(x=620, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="10",font=("Courier New", 15, 'bold'))
+but1.place(x=700, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="11",font=("Courier New", 15, 'bold'))
+but1.place(x=780, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="12",font=("Courier New", 15, 'bold'))
+but1.place(x=860, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="13",font=("Courier New", 15, 'bold'))
+but1.place(x=940, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="14",font=("Courier New", 15, 'bold'))
+but1.place(x=1020, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="15",font=("Courier New", 15, 'bold'))
+but1.place(x=1100, y=150)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="16",font=("Courier New", 15, 'bold'))
+but1.place(x=300, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="17",font=("Courier New", 15, 'bold'))
+but1.place(x=380, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="18",font=("Courier New", 15, 'bold'))
+but1.place(x=460, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="19",font=("Courier New", 15, 'bold'))
+but1.place(x=540, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="20",font=("Courier New", 15, 'bold'))
+but1.place(x=620, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="21",font=("Courier New", 15, 'bold'))
+but1.place(x=700, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="22",font=("Courier New", 15, 'bold'))
+but1.place(x=780, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="23",font=("Courier New", 15, 'bold'))
+but1.place(x=860, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="24",font=("Courier New", 15, 'bold'))
+but1.place(x=940, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="25",font=("Courier New", 15, 'bold'))
+but1.place(x=1020, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="26",font=("Courier New", 15, 'bold'))
+but1.place(x=1100, y=250)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="27",font=("Courier New", 15, 'bold'))
+but1.place(x=300, y=350)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="28",font=("Courier New", 15, 'bold'))
+but1.place(x=380, y=350)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="29",font=("Courier New", 15, 'bold'))
+but1.place(x=460, y=350)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="30",font=("Courier New", 15, 'bold'))
+but1.place(x=540, y=350)
+but1 = tk.Button(root, padx=15, pady=15, bd=2, bg='light blue', text="31",font=("Courier New", 15, 'bold'))
+but1.place(x=620, y=350)
+
+
+
+root.mainloop()
